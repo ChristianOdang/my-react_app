@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  text-align: center;
+  color: chocolate;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-size: 38px;
+}
+.pizza {
+  margin: 2rem 4rem;
+  border: 1px solid chocolate;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.pizza_menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.menu_header {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: overline;
+}
+.footer {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
