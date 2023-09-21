@@ -14,7 +14,7 @@ const pizzaData = [
     ingredients: "Tomato and mozarella",
     price: 10,
     photoName: "images/IMG_4860.JPG",
-    soldOut: false,
+    soldOut: true,
   },
   {
     name: "Pizza Spinaci",
@@ -42,7 +42,7 @@ const pizzaData = [
     ingredients: "Tomato, mozarella, spinach, and ricotta",
     price: 12,
     photoName: "images/IMG_4856.JPG",
-    soldOut: false,
+    soldOut: true,
   },
 ];
 function Menu() {
@@ -52,13 +52,25 @@ function Menu() {
   return (
     <div>
       <h2 className='menu_header'>Our Menu</h2>
+
       {numPizzas > 0 ? (
-        <ul className='pizza_menu'>
-          {pizzaData.map((pizza) => (
-            <Pizza pizzaObj={pizza} />
-          ))}
-        </ul>
-      ) : <p className="error-msg">We're still working on our menu. Please come back later.</p>}
+        <>
+          <p className='menu_text'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quae
+            voluptate? Et sit tempora odio iste suscipit magnam, recusandae
+            ullam.
+          </p>
+          <ul className='pizza_menu'>
+            {pizzaData.map((pizza) => (
+              <Pizza pizzaObj={pizza} />
+            ))}
+          </ul>
+        </>
+      ) : (
+        <p className='error-msg'>
+          We're still working on our menu. Please come back later.
+        </p>
+      )}
     </div>
   );
 }
